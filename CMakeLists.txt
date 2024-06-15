@@ -3,4 +3,6 @@ project(todopp)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(todopp main.cpp)
+file(GLOB SOURCES "src/*.cpp" "src/*.h")
+
+add_executable(todopp ${SOURCES})
